@@ -1,0 +1,42 @@
+footer{
+
+    background-color: #71dbd2;
+    background-image: linear-gradient(to bottom, #71dbd2, white);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+footer h3 {
+
+    font-size: 25px;
+    padding-top: 10px;
+    text-shadow: 0px 5px 7px;
+
+}
+
+footer ul{
+
+    padding: 15px;
+
+}
+
+footer div{
+
+    font-size: 13px;
+
+}
+
+@media (min-width: 1100px){
+
+    footer ul{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+
+}

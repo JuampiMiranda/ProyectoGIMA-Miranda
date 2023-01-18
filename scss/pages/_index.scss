@@ -1,0 +1,73 @@
+/*=====MAIN=====*/
+
+.portada{
+
+    height: 100vh;
+    text-align: center;
+    padding-top: 150px;
+    background-image: url(../img/promo3.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__contenido h2{
+
+        font-size: 35px;
+    }
+    
+    &__contenido p{
+    
+        font-size: 20px;
+        padding: 20px;
+    }
+}
+
+
+
+.portada__presentacion h3{
+
+    font-size: 25px;
+    padding: 20px;
+
+}
+
+.portada__video{
+
+    margin-top: 10px;
+    margin-bottom: 50px;
+    width: 300px;
+    height: 200px;
+    border-radius: 20px;
+
+    box-shadow: 10px 10px 10px;
+    transition-duration: 0.5s;
+
+    &:hover{
+
+        transform: scale(1.1);
+    
+    }
+}
+
+
+@media (min-width: 1100px){
+
+    .portada{
+
+        padding-top: 150px;
+
+    }
+
+    .portada__video{
+
+        width: 600px;
+        height: 400px;
+
+    }
+
+}

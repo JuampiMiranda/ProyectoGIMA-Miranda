@@ -1,0 +1,88 @@
+.promociones{
+
+    padding-top: 80px;
+    background-color:#def;
+    background-image: radial-gradient(closest-side, transparent 98%, rgba(0,0,0,.3) 99%), radial-gradient(closest-side, transparent 98%, rgba(0,0,0,.3) 99%);
+    background-size:80px 80px;
+    background-position:0 0, 40px 40px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    &__titulo h2{
+
+        font-size: 35px;
+        text-align: start;
+        text-shadow: 5px 5px 5px;
+        padding-top: 50px;
+    
+    }
+    
+    &__descrip{
+
+        margin: 15px;
+     
+     }
+}
+
+.promociones__descrip-tarjeta{
+
+    background-color: rgba(255, 192, 203, 0.856);
+    background-image: linear-gradient(to right, white, pink); 
+    border-radius: 0px;
+    padding: 50px;
+        
+
+    box-shadow: -10px 10px 15px;
+    transition-duration: 0.5s;
+
+    &:hover{
+
+        transform: scale(1.05);
+    
+    }
+}
+
+@media (min-width: 1100px){
+
+    .promociones{
+
+        background-image: none;
+        padding-top: 80px;
+        background-color:#def;
+        background-image: radial-gradient(closest-side, transparent 98%, rgba(0,0,0,.3) 99%), radial-gradient(closest-side, transparent 98%, rgba(0,0,0,.3) 99%);
+        background-size:80px 80px;
+        background-position:0 0, 40px 40px;
+        
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 1fr;
+    
+        &__promociones h2{
+    
+            margin: 50px;
+        
+        }
+    
+        &__descrip{
+    
+            margin-top: 150px;
+        
+        }
+    
+    }
+    
+    .promociones__descrip-tarjeta{
+    
+        width: 70vh;
+        text-align: center;
+    }
+    
+}
+
+
+
+   
+

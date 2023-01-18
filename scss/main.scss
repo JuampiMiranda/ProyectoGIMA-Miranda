@@ -1,0 +1,20 @@
+/*base*/
+@import"./base/base";
+
+/*components*/
+
+@import "./components/navbar";
+@import "./components/botom";
+@import "./components/footer";
+
+/*pages*/
+
+@import "./pages/index";
+@import "./pages/tratamientos";
+@import "./pages/promociones";
+@import "./pages/redes";
+@import "./pages/contacto";
+
+/*utils*/
+
+@import "./utils/variables";
