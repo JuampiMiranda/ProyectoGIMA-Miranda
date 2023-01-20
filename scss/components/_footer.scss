@@ -1,42 +1,124 @@
-footer{
+.barrafooter{
 
-    background-color: #71dbd2;
-    background-image: linear-gradient(to bottom, #71dbd2, white);
+    background-color: $color-primario;
+    background-image: linear-gradient(to bottom, $color-secundario, $color-primario);
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
+    &_titulo {
+
+        font-size: 25px;
+        padding-top: 10px;
+        text-shadow: 0px 5px 7px;
+    
+    }
+    
+    &_nav{
+        
+        ul{
+            padding: 15px;
+            font-size: 20px;
+            gap: 10px;
+        }
+    }
+
+    &_copy{
+
+        font-size: 17px;
+        margin: 10px;
+
+    }
 
 }
 
-footer h3 {
 
-    font-size: 25px;
-    padding-top: 10px;
-    text-shadow: 0px 5px 7px;
+
+@media (min-width: 768px){
+
+    .barrafooter{
+
+        &_titulo{
+
+            font-size: 35px;
+        }
+
+        &_nav{
+ 
+         ul{
+ 
+             display: flex;
+             flex-direction: column;
+             gap: 10px;
+         }
+        }
+     }
 
 }
 
-footer ul{
+@media (min-width: 992px){
 
-    padding: 15px;
+    .barrafooter{
+
+        &_titulo{
+
+            font-size: 35px;
+        }
+
+        &_nav{
+
+         ul{
+
+            display: flex;
+            flex-direction: row;
+            gap: 30px;
+        }
+       }
+    }
+
+}
+@media (min-width: 1200px){
+
+    .barrafooter{
+
+        &_titulo{
+
+            font-size: 35px;
+        }
+
+        &_nav{
+
+         ul{
+
+            display: flex;
+            flex-direction: row;
+            gap: 40px;
+        }
+       }
+    }
 
 }
 
-footer div{
+@media (min-width: 1400px){
 
-    font-size: 13px;
+    .barrafooter{
 
-}
+        &_titulo{
 
-@media (min-width: 1100px){
+            font-size: 35px;
+        }
 
-    footer ul{
-        display: flex;
-        flex-direction: row;
-        gap: 20px;
+        &_nav{
+
+         ul{
+
+            display: flex;
+            flex-direction: row;
+            gap: 50px;
+        }
+       }
     }
 
 }

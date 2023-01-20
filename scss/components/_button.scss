@@ -1,0 +1,36 @@
+/*Navbar*/
+.barra_btn{
+
+     background-color: $color-btn;
+     font-size: 20px;
+     border: none;
+     padding: 2px 10px;
+     box-shadow: 2px 2px 1px black;
+     transition: 0.5s;
+}
+
+.tratamientos_btn{
+
+    background-color: $color-btn;
+    font-size: 15px;
+    border: none;
+    width: 10vh;
+    box-shadow: 2px 2px 5px black;
+}
+
+.contacto_btn{
+
+    background-color: $color-btn;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    padding: 2px;
+    width: 10vh;
+    box-shadow: 2px 2px 5px black;
+}
+
+
+
+
+
+
