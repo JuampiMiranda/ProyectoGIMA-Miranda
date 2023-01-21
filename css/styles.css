@@ -5,6 +5,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Georgia", "Times New Roman", Times, serif;
 }
 
 ul,
@@ -247,7 +248,7 @@ h1 {
 
 .portada__video {
   margin-top: 10px;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
   width: 350px;
   height: 200px;
   border-radius: 15px;
@@ -403,6 +404,7 @@ h1 {
 }
 @media (min-width: 1200px) {
   .tratamientos__tarjetas {
+    margin-left: 80px;
     padding: 10%;
     padding-top: 10px;
   }

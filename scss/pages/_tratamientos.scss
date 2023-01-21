@@ -52,7 +52,7 @@
 @media (min-width: 768px){
 
     .tratamientos{
-
+        
         &__tarjetas{
 
             text-align: center;
@@ -94,6 +94,7 @@
 
     .tratamientos__tarjetas{
 
+        margin-left: 80px;
         padding: 10%;
         padding-top: 10px;
     }
