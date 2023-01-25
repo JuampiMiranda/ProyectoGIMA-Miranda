@@ -1,4 +1,6 @@
 
+/*---TRATAMIENTOS---*/
+
 .tratamientos{
 
     padding-top: 80px;
@@ -13,17 +15,14 @@
         text-shadow: 5px 5px 5px;
     
     }
-
 }
 .tratamientos__tarjetas{
 
     display: grid;
-    
     grid-template-rows: repeat(6, 200px);
     row-gap: 20px;
     justify-content: center;
     align-items: center;
-
 }
 
 .tratamientos__tarjetas-descrip{

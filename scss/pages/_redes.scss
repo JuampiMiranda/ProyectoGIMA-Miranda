@@ -1,4 +1,6 @@
 
+/*---REDES---*/
+
 .testimonios{
     
     background-color: $color-fondo;
@@ -25,7 +27,7 @@
         border-radius: 5px;
         display: grid;
         grid-template-rows: repeat(3, 50px);
-        row-gap: 5px;
+        row-gap: 25px;
         justify-content: center;
         align-items: center;
         padding: 15px;
@@ -39,7 +41,6 @@
         
         p{
 
-            margin-top: 25px;
             font-size: 15px
         }
 
@@ -62,7 +63,7 @@
         border-radius: 5px;
         display: grid;
         grid-template-rows: repeat(3, 50px);
-        row-gap: 5px;
+        row-gap: 25px;
         justify-content: center;
         align-items: center;
         padding: 15px;
@@ -97,7 +98,7 @@
         border-radius: 5px;
         display: grid;
         grid-template-rows: repeat(3, 50px);
-        row-gap: 5px;
+        row-gap: 25px;
         justify-content: center;
         align-items: center;
         padding: 15px;
@@ -133,7 +134,7 @@
         border-radius: 5px;
         display: grid;
         grid-template-rows: repeat(3, 50px);
-        row-gap: 5px;
+        row-gap: 25px;
         justify-content: center;
         align-items: center;
         padding: 15px;

@@ -1,11 +1,11 @@
 /*utils*/
 /*base*/
-/* RESET */
+/*---RESET---*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Georgia", "Times New Roman", Times, serif;
+  font-family: "Roboto", sans-serif;
 }
 
 ul,
@@ -18,12 +18,8 @@ a {
   color: black;
 }
 
-h1 {
-  font-size: 35px;
-}
-
 /*components*/
-/*Navbar*/
+/*---BUTTON---*/
 .barra_btn {
   background-color: #ffafcc;
   font-size: 20px;
@@ -51,6 +47,7 @@ h1 {
   box-shadow: 2px 2px 5px black;
 }
 
+/*---NAVBAR---*/
 .barra {
   background-color: #a2d2ff;
   background-image: linear-gradient(to bottom, #a2d2ff, #bde0fe);
@@ -64,8 +61,10 @@ h1 {
   margin-left: 20px;
 }
 .barra_titulo a {
-  font-size: 25px;
-  text-shadow: 5px 3px 8px;
+  font-size: 35px;
+  font-weight: 900;
+  font-style: italic;
+  text-shadow: 10px 10px 8px;
   transition: all 0.5s;
 }
 .barra_hamb {
@@ -76,7 +75,7 @@ h1 {
   border: none;
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: center;
 }
 .barra_collapse ul li {
   font-size: 20px;
@@ -151,6 +150,7 @@ h1 {
     margin-right: 20px;
   }
 }
+/*---FOOTER---*/
 .barrafooter {
   background-color: #a2d2ff;
   background-image: linear-gradient(to bottom, #bde0fe, #a2d2ff);
@@ -162,8 +162,10 @@ h1 {
 }
 .barrafooter_titulo {
   font-size: 25px;
+  font-weight: 700;
+  font-style: italic;
   padding-top: 10px;
-  text-shadow: 0px 5px 7px;
+  text-shadow: 10px 10px 8px;
 }
 .barrafooter_nav ul {
   padding: 15px;
@@ -216,7 +218,7 @@ h1 {
   }
 }
 /*pages*/
-/*=====MAIN=====*/
+/*---INDEX---*/
 .portada {
   height: 100vh;
   text-align: justify;
@@ -231,15 +233,26 @@ h1 {
   align-items: center;
 }
 .portada__contenido h2 {
+  font-weight: 700;
   font-size: 35px;
   text-align: center;
 }
+.portada h3 {
+  padding: 15px;
+  font-weight: 700;
+  font-size: 30px;
+  text-align: center;
+  text-decoration: underline 2px;
+}
 .portada__contenido p {
+  font-style: italic;
+  font-weight: 400;
   font-size: 20px;
   padding: 20px;
 }
 
-.portada__presentacion h3 {
+.portada__presentacion h4 {
+  font-weight: 700;
   font-size: 25px;
   text-align: center;
   text-decoration: underline 2px;
@@ -313,7 +326,7 @@ h1 {
 }
 @media (min-width: 1200px) {
   .portada {
-    padding-top: 150px;
+    padding-top: 250px;
   }
   .portada__contenido h2 {
     font-size: 45px;
@@ -340,6 +353,7 @@ h1 {
     height: 500px;
   }
 }
+/*---TRATAMIENTOS---*/
 .tratamientos {
   padding-top: 80px;
   background-color: #cdb4db;
@@ -409,6 +423,7 @@ h1 {
     padding-top: 10px;
   }
 }
+/*---PROMOCIONES---*/
 .promociones {
   padding-top: 80px;
   padding-bottom: 80px;
@@ -473,6 +488,7 @@ h1 {
     text-align: left;
   }
 }
+/*---REDES---*/
 .testimonios {
   background-color: #cdb4db;
   display: grid;
@@ -495,7 +511,7 @@ h1 {
   border-radius: 5px;
   display: grid;
   grid-template-rows: repeat(3, 50px);
-  row-gap: 5px;
+  row-gap: 25px;
   justify-content: center;
   align-items: center;
   padding: 15px;
@@ -505,7 +521,6 @@ h1 {
   font-size: 25px;
 }
 .testimonios__tarjeta1 p {
-  margin-top: 25px;
   font-size: 15px;
 }
 .testimonios__tarjeta1 h5 {
@@ -521,7 +536,7 @@ h1 {
   border-radius: 5px;
   display: grid;
   grid-template-rows: repeat(3, 50px);
-  row-gap: 5px;
+  row-gap: 25px;
   justify-content: center;
   align-items: center;
   padding: 15px;
@@ -547,7 +562,7 @@ h1 {
   border-radius: 5px;
   display: grid;
   grid-template-rows: repeat(3, 50px);
-  row-gap: 5px;
+  row-gap: 25px;
   justify-content: center;
   align-items: center;
   padding: 15px;
@@ -573,7 +588,7 @@ h1 {
   border-radius: 5px;
   display: grid;
   grid-template-rows: repeat(3, 50px);
-  row-gap: 5px;
+  row-gap: 25px;
   justify-content: center;
   align-items: center;
   padding: 15px;
@@ -653,6 +668,7 @@ h1 {
     grid-row: 3/4;
   }
 }
+/*---CONTACTO---*/
 .main_contacto {
   background-color: #cdb4db;
 }
@@ -679,8 +695,8 @@ h1 {
 }
 .contacto_ubicacion iframe {
   margin-bottom: 50px;
-  width: 420px;
-  height: 400px;
+  width: 300px;
+  height: 300px;
   border-radius: 0px;
   box-shadow: 10px 10px 10px;
   transition-duration: 0.5s;
