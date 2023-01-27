@@ -21,16 +21,17 @@ a {
 /*components*/
 /*---BUTTON---*/
 .barra_btn {
-  background-color: #ffafcc;
+  background-color: #74c69d;
   font-size: 20px;
   border: none;
   padding: 2px 10px;
   box-shadow: 2px 2px 1px black;
   transition: 0.5s;
+  text-decoration: none;
 }
 
 .tratamientos_btn {
-  background-color: #ffafcc;
+  background-color: #74c69d;
   font-size: 15px;
   border: none;
   width: 10vh;
@@ -38,7 +39,7 @@ a {
 }
 
 .contacto_btn {
-  background-color: #ffafcc;
+  background-color: #74c69d;
   font-size: 20px;
   border: none;
   border-radius: 5px;
@@ -48,13 +49,13 @@ a {
 }
 
 /*---NAVBAR---*/
+header {
+  background-color: #09e4d2;
+}
+
 .barra {
-  background-color: #a2d2ff;
-  background-image: linear-gradient(to bottom, #a2d2ff, #bde0fe);
   padding: 10px;
   width: 100%;
-  position: fixed;
-  top: 0;
   transition: all 0.5s;
 }
 .barra_titulo {
@@ -64,7 +65,8 @@ a {
   font-size: 35px;
   font-weight: 900;
   font-style: italic;
-  text-shadow: 10px 10px 8px;
+  color: black;
+  text-shadow: 10px 10px 8px black;
   transition: all 0.5s;
 }
 .barra_hamb {
@@ -79,7 +81,24 @@ a {
 }
 .barra_collapse ul li {
   font-size: 20px;
-  transition: all 0.5s;
+  display: inline-block;
+  position: relative;
+}
+.barra_collapse ul li ::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 4px;
+  bottom: 0;
+  left: 0;
+  background-color: #74c69d;
+  transform-origin: bottom right;
+  transition: transform 0.6s ease-out;
+}
+.barra_collapse ul li :hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
 @media (min-width: 768px) {
@@ -151,212 +170,45 @@ a {
   }
 }
 /*---FOOTER---*/
-.barrafooter {
-  background-color: #a2d2ff;
-  background-image: linear-gradient(to bottom, #bde0fe, #a2d2ff);
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+footer {
+  background-color: #09e4d2;
 }
-.barrafooter_titulo {
-  font-size: 25px;
-  font-weight: 700;
-  font-style: italic;
-  padding-top: 10px;
-  text-shadow: 10px 10px 8px;
-}
-.barrafooter_nav ul {
-  padding: 15px;
+footer .barrafooter__nav ul li {
   font-size: 20px;
-  gap: 10px;
+  display: inline-block;
+  position: relative;
 }
-.barrafooter_copy {
-  font-size: 17px;
-  margin: 10px;
+footer .barrafooter__nav ul li ::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 4px;
+  bottom: 0;
+  left: 0;
+  background-color: #74c69d;
+  transform-origin: bottom right;
+  transition: transform 0.6s ease-out;
+}
+footer .barrafooter__nav ul li :hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
-@media (min-width: 768px) {
-  .barrafooter_titulo {
-    font-size: 35px;
-  }
-  .barrafooter_nav ul {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-}
-@media (min-width: 992px) {
-  .barrafooter_titulo {
-    font-size: 35px;
-  }
-  .barrafooter_nav ul {
-    display: flex;
-    flex-direction: row;
-    gap: 30px;
-  }
-}
-@media (min-width: 1200px) {
-  .barrafooter_titulo {
-    font-size: 35px;
-  }
-  .barrafooter_nav ul {
-    display: flex;
-    flex-direction: row;
-    gap: 40px;
-  }
-}
-@media (min-width: 1400px) {
-  .barrafooter_titulo {
-    font-size: 35px;
-  }
-  .barrafooter_nav ul {
-    display: flex;
-    flex-direction: row;
-    gap: 50px;
-  }
-}
 /*pages*/
 /*---INDEX---*/
-.portada {
-  height: 100vh;
-  text-align: justify;
-  padding-top: 100px;
-  background-image: url(../img/promo3.jpg);
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.portada__contenido h2 {
-  font-weight: 700;
-  font-size: 35px;
-  text-align: center;
-}
-.portada h3 {
-  padding: 15px;
-  font-weight: 700;
-  font-size: 30px;
-  text-align: center;
-  text-decoration: underline 2px;
-}
-.portada__contenido p {
-  font-style: italic;
-  font-weight: 400;
-  font-size: 20px;
-  padding: 20px;
-}
-
-.portada__presentacion h4 {
-  font-weight: 700;
-  font-size: 25px;
-  text-align: center;
-  text-decoration: underline 2px;
-  padding: 20px;
-}
-
-.portada__video {
-  margin-top: 10px;
-  margin-bottom: 100px;
-  width: 350px;
-  height: 200px;
-  border-radius: 15px;
-  box-shadow: 10px 10px 10px;
+.tarjeta__portada {
+  background-color: #09d8c7;
   transition-duration: 0.5s;
 }
-.portada__video:hover {
+.tarjeta__portada:hover {
   transform: scale(1.1);
 }
 
-@media (min-width: 576px) {
-  .portada {
-    padding-top: 150px;
-  }
-  .portada__contenido h2 {
-    font-size: 40px;
-  }
-  .portada__contenido p {
-    font-size: 25px;
-    padding: 20px;
-  }
-  .portada__video {
-    width: 550px;
-    height: 300px;
-  }
-}
-@media (min-width: 768px) {
-  .portada {
-    padding-top: 150px;
-  }
-  .portada__contenido h2 {
-    font-size: 40px;
-  }
-  .portada__contenido p {
-    font-size: 25px;
-    padding: 20px;
-  }
-  .portada__presentacion h3 {
-    font-size: 30px;
-    padding: 20px;
-  }
-  .portada__video {
-    width: 550px;
-    height: 300px;
-  }
-}
-@media (min-width: 992px) {
-  .portada {
-    padding-top: 150px;
-  }
-  .portada__contenido h2 {
-    font-size: 40px;
-  }
-  .portada__contenido p {
-    font-size: 25px;
-    padding: 20px;
-  }
-  .portada__video {
-    width: 650px;
-    height: 400px;
-  }
-}
-@media (min-width: 1200px) {
-  .portada {
-    padding-top: 250px;
-  }
-  .portada__contenido h2 {
-    font-size: 45px;
-  }
-  .portada__contenido p {
-    font-size: 30px;
-    padding: 20px;
-  }
-  .portada__presentacion h3 {
-    font-size: 35px;
-    padding: 20px;
-  }
-  .portada__video {
-    width: 750px;
-    height: 500px;
-  }
-}
-@media (min-width: 1400px) {
-  .portada {
-    padding-top: 150px;
-  }
-  .portada__video {
-    width: 750px;
-    height: 500px;
-  }
-}
 /*---TRATAMIENTOS---*/
 .tratamientos {
   padding-top: 80px;
-  background-color: #cdb4db;
+  background-color: white;
 }
 .tratamientos__titulo {
   font-size: 35px;
@@ -377,7 +229,7 @@ a {
 .tratamientos__tarjetas-descrip {
   width: 30vh;
   text-align: center;
-  background-color: #ffc8dd;
+  background-color: #01b8aa;
   border-radius: 5px;
   padding: 15px;
   box-shadow: 10px 10px 15px;
@@ -405,7 +257,7 @@ a {
     font-size: 25px;
   }
   .tratamientos .tratamientos__tarjetas-descrip {
-    background-color: #ffc8dd;
+    background-color: #01b8aa;
     border-radius: 10px;
     padding: 15px;
   }
@@ -427,7 +279,7 @@ a {
 .promociones {
   padding-top: 80px;
   padding-bottom: 80px;
-  background-color: #cdb4db;
+  background-color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -445,7 +297,7 @@ a {
 
 .promociones__descrip-tarjeta {
   text-align: center;
-  background-color: #ffc8dd;
+  background-color: #01b8aa;
   border-radius: 5px;
   padding: 50px;
   margin: 20px;
@@ -490,7 +342,7 @@ a {
 }
 /*---REDES---*/
 .testimonios {
-  background-color: #cdb4db;
+  background-color: white;
   display: grid;
   grid-template-columns: 340px;
   grid-template-rows: repeat(6, 200px);
@@ -507,7 +359,7 @@ a {
 .testimonios__tarjeta1 {
   width: 30vh;
   margin: 20px;
-  background-color: #ffc8dd;
+  background-color: #01b8aa;
   border-radius: 5px;
   display: grid;
   grid-template-rows: repeat(3, 50px);
@@ -532,7 +384,7 @@ a {
 .testimonios__tarjeta2 {
   width: 30vh;
   margin: 20px;
-  background-color: #ffc8dd;
+  background-color: #01b8aa;
   border-radius: 5px;
   display: grid;
   grid-template-rows: repeat(3, 50px);
@@ -558,7 +410,7 @@ a {
 .testimonios__tarjeta3 {
   width: 30vh;
   margin: 20px;
-  background-color: #ffc8dd;
+  background-color: #01b8aa;
   border-radius: 5px;
   display: grid;
   grid-template-rows: repeat(3, 50px);
@@ -584,7 +436,7 @@ a {
 .testimonios__tarjeta4 {
   width: 30vh;
   margin: 20px;
-  background-color: #ffc8dd;
+  background-color: #01b8aa;
   border-radius: 5px;
   display: grid;
   grid-template-rows: repeat(3, 50px);
@@ -670,7 +522,7 @@ a {
 }
 /*---CONTACTO---*/
 .main_contacto {
-  background-color: #cdb4db;
+  background-color: white;
 }
 
 .contacto_titulo h2 {

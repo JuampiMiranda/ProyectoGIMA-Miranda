@@ -1,195 +1,226 @@
 
 /*---INDEX---*/
 
-.portada{
-    height: 100vh;
-    text-align: justify;
-    padding-top: 100px;
-    background-image: url(../img/promo3.jpg);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+.tarjeta__portada{
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    &__contenido 
-    
-        h2{
-        font-weight: 700;
-        font-size: 35px;
-        text-align: center;
-        }
-
-        h3{
-        
-        padding: 15px;
-        font-weight: 700;
-        font-size: 30px;
-        text-align: center; 
-        text-decoration: underline 2px;
-        }
-    
-    &__contenido p{
-        
-        font-style: italic;
-        font-weight: 400;
-        font-size: 20px;
-        padding: 20px;
-    }
-}
-
-.portada__presentacion h4{
-
-    font-weight: 700;
-    font-size: 25px;
-    text-align: center;
-    text-decoration: underline 2px;
-    padding: 20px;
-}
-
-.portada__video{
-
-    margin-top: 10px;
-    margin-bottom: 100px;
-    width: 350px;
-    height: 200px;
-    border-radius: 15px;
-
-    box-shadow: 10px 10px 10px;
+    background-color: $color-secundario;
     transition-duration: 0.5s;
 
-    &:hover{
+     &:hover{
 
         transform: scale(1.1);
-    }
+     }
 }
 
-@media (min-width: 576px){
 
-    .portada{
 
-        padding-top: 150px;
 
-        &__contenido h2{
 
-            font-size: 40px;
-        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// .portada{
+//     height: 100vh;
+//     text-align: justify;
+//     padding-top: 100px;
+//     background-color: $color-fondo;
+//     background-size: cover;
+//     background-position: center;
+//     background-attachment: fixed;
+
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     align-items: center;
+
+//     &__contenido 
+    
+//         h2{
+//         font-weight: 700;
+//         font-size: 35px;
+//         text-align: center;
+//         }
+
+//         h3{
         
-        &__contenido p{
+//         padding: 15px;
+//         font-weight: 700;
+//         font-size: 30px;
+//         text-align: center; 
+//         text-decoration: underline 2px;
+//         }
+    
+//     &__contenido p{
         
-            font-size: 25px;
-            padding: 20px;
-        }
-    }
+//         font-style: italic;
+//         font-weight: 400;
+//         font-size: 20px;
+//         padding: 20px;
+//     }
+// }
 
-    .portada__video{
+// .portada__presentacion h4{
 
-        width: 550px;
-        height: 300px;
-    }
+//     font-weight: 700;
+//     font-size: 25px;
+//     text-align: center;
+//     text-decoration: underline 2px;
+//     padding: 20px;
+// }
 
-}
+// .portada__video{
 
-@media (min-width: 768px){
+//     margin-top: 10px;
+//     margin-bottom: 100px;
+//     width: 350px;
+//     height: 200px;
+//     border-radius: 15px;
 
-    .portada{
+//     box-shadow: 10px 10px 10px;
+//     transition-duration: 0.5s;
 
-        padding-top: 150px;
+//     &:hover{
 
-        &__contenido h2{
+//         transform: scale(1.1);
+//     }
+// }
 
-            font-size: 40px;
-        }
+// @media (min-width: 576px){
+
+//     .portada{
+
+//         padding-top: 150px;
+
+//         &__contenido h2{
+
+//             font-size: 40px;
+//         }
         
-        &__contenido p{
+//         &__contenido p{
         
-            font-size: 25px;
-            padding: 20px;
-        }
-        &__presentacion h3{
+//             font-size: 25px;
+//             padding: 20px;
+//         }
+//     }
 
-            font-size: 30px;
-            padding: 20px; 
-        }
-    }
+//     .portada__video{
 
-    .portada__video{
+//         width: 550px;
+//         height: 300px;
+//     }
 
-        width: 550px;
-        height: 300px;
-    }
-}
+// }
 
-@media (min-width: 992px){
+// @media (min-width: 768px){
 
-    .portada{
+//     .portada{
 
-        padding-top: 150px;
+//         padding-top: 150px;
 
-        &__contenido h2{
+//         &__contenido h2{
 
-            font-size: 40px;
-        }
+//             font-size: 40px;
+//         }
         
-        &__contenido p{
+//         &__contenido p{
         
-            font-size: 25px;
-            padding: 20px;
-        }    
-    }
+//             font-size: 25px;
+//             padding: 20px;
+//         }
+//         &__presentacion h3{
 
-    .portada__video{
+//             font-size: 30px;
+//             padding: 20px; 
+//         }
+//     }
 
-        width: 650px;
-        height: 400px;
-    }
-}
+//     .portada__video{
 
-@media (min-width: 1200px){
+//         width: 550px;
+//         height: 300px;
+//     }
+// }
 
-    .portada{
+// @media (min-width: 992px){
 
-        padding-top: 250px;
+//     .portada{
 
-        &__contenido h2{
+//         padding-top: 150px;
 
-            font-size: 45px;
-        }
+//         &__contenido h2{
+
+//             font-size: 40px;
+//         }
         
-        &__contenido p{
+//         &__contenido p{
         
-            font-size: 30px;
-            padding: 20px;
-        }
+//             font-size: 25px;
+//             padding: 20px;
+//         }    
+//     }
 
-        &__presentacion h3{
+//     .portada__video{
 
-            font-size: 35px;
-            padding: 20px;    
-        }
-    }
+//         width: 650px;
+//         height: 400px;
+//     }
+// }
 
-    .portada__video{
+// @media (min-width: 1200px){
 
-        width: 750px;
-        height: 500px;
-    }
+//     .portada{
 
-}
+//         padding-top: 250px;
 
-@media (min-width: 1400px){
+//         &__contenido h2{
 
-    .portada{
+//             font-size: 45px;
+//         }
+        
+//         &__contenido p{
+        
+//             font-size: 30px;
+//             padding: 20px;
+//         }
 
-        padding-top: 150px;
-    }
+//         &__presentacion h3{
 
-    .portada__video{
+//             font-size: 35px;
+//             padding: 20px;    
+//         }
+//     }
 
-        width: 750px;
-        height: 500px;
-    }
-}
+//     .portada__video{
+
+//         width: 750px;
+//         height: 500px;
+//     }
+
+// }
+
+// @media (min-width: 1400px){
+
+//     .portada{
+
+//         padding-top: 150px;
+//     }
+
+//     .portada__video{
+
+//         width: 750px;
+//         height: 500px;
+//     }
+// }
