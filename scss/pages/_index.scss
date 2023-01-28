@@ -5,11 +5,26 @@
 
     background-color: $color-secundario;
     transition-duration: 0.5s;
+    
+    ul{
+
+      li{
+         list-style: circle;
+         padding: 5px;
+         text-align: start;
+
+      }
+    }
 
      &:hover{
 
         transform: scale(1.1);
      }
+}
+
+.portada__contenido{
+
+   background-color: rgb(240, 240, 240);
 }
 
 

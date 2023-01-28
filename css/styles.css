@@ -21,7 +21,7 @@ a {
 /*components*/
 /*---BUTTON---*/
 .barra_btn {
-  background-color: #74c69d;
+  background-color: #d7fff1;
   font-size: 20px;
   border: none;
   padding: 2px 10px;
@@ -31,7 +31,7 @@ a {
 }
 
 .tratamientos_btn {
-  background-color: #74c69d;
+  background-color: #d7fff1;
   font-size: 15px;
   border: none;
   width: 10vh;
@@ -39,7 +39,7 @@ a {
 }
 
 .contacto_btn {
-  background-color: #74c69d;
+  background-color: #d7fff1;
   font-size: 20px;
   border: none;
   border-radius: 5px;
@@ -92,13 +92,18 @@ header {
   height: 4px;
   bottom: 0;
   left: 0;
-  background-color: #74c69d;
+  background-color: #d7fff1;
   transform-origin: bottom right;
   transition: transform 0.6s ease-out;
 }
 .barra_collapse ul li :hover::after {
   transform: scaleX(1);
   transform-origin: bottom left;
+}
+
+.barra__celular {
+  text-align: center;
+  text-decoration: underline;
 }
 
 @media (min-width: 768px) {
@@ -186,7 +191,7 @@ footer .barrafooter__nav ul li ::after {
   height: 4px;
   bottom: 0;
   left: 0;
-  background-color: #74c69d;
+  background-color: #d7fff1;
   transform-origin: bottom right;
   transition: transform 0.6s ease-out;
 }
@@ -201,81 +206,20 @@ footer .barrafooter__nav ul li :hover::after {
   background-color: #09d8c7;
   transition-duration: 0.5s;
 }
+.tarjeta__portada ul li {
+  list-style: circle;
+  padding: 5px;
+  text-align: start;
+}
 .tarjeta__portada:hover {
   transform: scale(1.1);
 }
 
-/*---TRATAMIENTOS---*/
-.tratamientos {
-  padding-top: 80px;
-  background-color: white;
-}
-.tratamientos__titulo {
-  font-size: 35px;
-  display: flex;
-  justify-content: center;
-  padding: 20px;
-  text-shadow: 5px 5px 5px;
+.portada__contenido {
+  background-color: rgb(240, 240, 240);
 }
 
-.tratamientos__tarjetas {
-  display: grid;
-  grid-template-rows: repeat(6, 200px);
-  row-gap: 20px;
-  justify-content: center;
-  align-items: center;
-}
-
-.tratamientos__tarjetas-descrip {
-  width: 30vh;
-  text-align: center;
-  background-color: #01b8aa;
-  border-radius: 5px;
-  padding: 15px;
-  box-shadow: 10px 10px 15px;
-  transition-duration: 0.5s;
-}
-.tratamientos__tarjetas-descrip a {
-  transform: translate(15px, 8px);
-}
-.tratamientos__tarjetas-descrip:hover {
-  transform: scale(1.05);
-}
-
-@media (min-width: 768px) {
-  .tratamientos__tarjetas {
-    text-align: center;
-    padding: 10%;
-    padding-top: 10px;
-    display: grid;
-    grid-template-columns: repeat(3, 36%);
-    grid-template-rows: repeat(3, 36%);
-    row-gap: 20px;
-    column-gap: 50px;
-  }
-  .tratamientos__tarjetas h3 {
-    font-size: 25px;
-  }
-  .tratamientos .tratamientos__tarjetas-descrip {
-    background-color: #01b8aa;
-    border-radius: 10px;
-    padding: 15px;
-  }
-}
-@media (min-width: 992px) {
-  .tratamientos__tarjetas {
-    padding: 10%;
-    padding-top: 10px;
-  }
-}
-@media (min-width: 1200px) {
-  .tratamientos__tarjetas {
-    margin-left: 80px;
-    padding: 10%;
-    padding-top: 10px;
-  }
-}
-/*---PROMOCIONES---*/
+/*---TRATAMIENTOS---*/ /*---PROMOCIONES---*/
 .promociones {
   padding-top: 80px;
   padding-bottom: 80px;
