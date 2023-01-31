@@ -11,6 +11,23 @@
     border-radius: 0%;
 }
 
+.contacto__btn{
+
+    background-color: $color-btn;
+    font-size: 15px;
+    border-radius: 5px;
+    width: 100px;
+
+    transition: 0.2s;
+
+    :hover{
+        
+        color: $color-primario;
+        background-color: white;
+
+    }
+}
+
 
 
 

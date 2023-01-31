@@ -54,46 +54,62 @@
     
     </header>
 
-    <main class="main_contacto">
-        <section class="contacto container shadow" id="contacto">
-            <div class="contacto_titulo row">
-                <h2 class="display-7 fw-bold text-center">Contactanos</h2>
+    <main class="contacto">
+
+        <!-- Formulario de Contacto -->
+
+        <section class="contacto__datos container m-4" id="contacto">
+
+            <div class="contacto__titulo row">
+                <h2 class="display-6 p-2 fw-bold text-center">Contactanos</h2>
             </div>
-            <form role="search" class="contacto_formulario" action="">
-                <div class="contacto_nombre mb-3">
+            
+            <form role="search" class="contacto__formulario" action="">
+                <div class="contacto__nombre mb-6">
                     <label for="exampleFormControlInput1" class="form-label"></label>
                     <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="Nombre y Apellido">
                 </div>
-                <div class="contacto_telefono mb-3">
+                <div class="contacto__telefono mb-6">
                     <label for="exampleFormControlInput1" class="form-label"></label>
                     <input type="tel" class="form-control" id="exampleFormControlInput1" placeholder="Telefono">
                 </div>
-                <div class="contacto_email mb-3">
+                <div class="contacto__email mb-6">
                     <label for="exampleFormControlInput1" class="form-label"></label>
                     <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email">
                 </div>
-                <div class="contacto_turnos mb-3">
+                <div class="contacto__turnos mb-6">
                     <label for="exampleFormControlTextarea1" class="form-label"></label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="10" placeholder="Para turnos/consulta/Reclamo/Sugerencia"></textarea>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="Para turnos/consulta/Reclamo/Sugerencia"></textarea>
                 </div>
-                <div>
-                    <input class="contacto_btn btn-light" type="submit" value="Enviar">
+                <div class="d-flex justify-content-center m-3">
+                    <input class="contacto__btn btn shadow" type="submit" value="Enviar">
                 </div>
             </form>
 
-            <div class="contacto_ubicacion">
-                <h2 class="display-7 fw-bold text-center">Ubicación:</h2>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3347.822162753102!2d-68.86313058333137!3d-32.9557043
-                28821305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e0a4cb6f24f05%3A0x4c6a70ee2781d13!2sPalmares%20Open%20
-                Mall%2C%20Ruta%20Panamericana%202650%2C%20M5501%20Godoy%20Cruz%2C%20Mendoza!5e0!3m2!1ses-419!2sar!4v1669931987362!5m2!1ses
-                -419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-
-                downgrade"></iframe>
-                <div class="shadow">
-                    <ul>
-                        <li>Dirección: Palmares Open Mall, Ruta Panamericana, Godoy Cruz, Provincia de Mendoza</li>
-                        <li>Telefono: 2615845828</li>
-                        <li>Mail: gima@gmail.com</li>
-                    </ul>
+        </section>
+
+        <!-- Ubicación -->
+
+        <section class="shadow">
+
+            <div class="contacto__ubicacion container">
+                <div class="row">
+                    <div class="contacto__iframe">
+                        <h2 class="display-6 fw-bold text-center m-3">Ubicación:</h2>
+                        <iframe class=" p-2 w-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3347.822162753102!2d-68.86313058333137!3d-32.9557043
+                        28821305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e0a4cb6f24f05%3A0x4c6a70ee2781d13!2sPalmares%20Open%20
+                        Mall%2C%20Ruta%20Panamericana%202650%2C%20M5501%20Godoy%20Cruz%2C%20Mendoza!5e0!3m2!1ses-419!2sar!4v1669931987362!5m2!1ses
+                        -419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-
+                        downgrade">
+                        </iframe>
+                    </div>
+                    <div class="shadow m-2">
+                        <ul>
+                            <li>Dirección: Palmares Open Mall, Ruta Panamericana, Godoy Cruz, Provincia de Mendoza</li>
+                            <li>Telefono: 2615845828</li>
+                            <li>Mail: gima@gmail.com</li>
+                        </ul>
+                    </div>
                 </div>
             </div>    
 
