@@ -27,7 +27,13 @@
    background-color: rgb(240, 240, 240);
 }
 
+@media (min-width: 768px){
 
+   .tarjeta__portada{
+
+      width: 300px;
+   }
+}
 
 
 

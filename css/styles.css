@@ -20,32 +20,13 @@ a {
 
 /*components*/
 /*---BUTTON---*/
-.barra_btn {
+.tarjeta__btn {
   background-color: #d7fff1;
+  color: black;
+  font-style: italic;
   font-size: 20px;
-  border: none;
-  padding: 2px 10px;
-  box-shadow: 2px 2px 1px black;
-  transition: 0.5s;
-  text-decoration: none;
-}
-
-.tratamientos_btn {
-  background-color: #d7fff1;
-  font-size: 15px;
-  border: none;
-  width: 10vh;
-  box-shadow: 2px 2px 5px black;
-}
-
-.contacto_btn {
-  background-color: #d7fff1;
-  font-size: 20px;
-  border: none;
-  border-radius: 5px;
-  padding: 2px;
-  width: 10vh;
-  box-shadow: 2px 2px 5px black;
+  width: 200px;
+  border-radius: 0%;
 }
 
 /*---NAVBAR---*/
@@ -219,6 +200,11 @@ footer .barrafooter__nav ul li :hover::after {
   background-color: rgb(240, 240, 240);
 }
 
+@media (min-width: 768px) {
+  .tarjeta__portada {
+    width: 300px;
+  }
+}
 /*---TRATAMIENTOS---*/ /*---PROMOCIONES---*/
 .promociones {
   padding-top: 80px;
@@ -284,184 +270,15 @@ footer .barrafooter__nav ul li :hover::after {
     text-align: left;
   }
 }
-/*---REDES---*/
-.testimonios {
-  background-color: white;
-  display: grid;
-  grid-template-columns: 340px;
-  grid-template-rows: repeat(6, 200px);
-  row-gap: 50px;
-  justify-content: center;
-  align-items: center;
+/*---Estetica---*/
+@media (min-width: 576px) {
+  .tarjeta__btn {
+    width: 450px;
+  }
 }
-.testimonios h2 {
-  text-align: center;
-  font-size: 35px;
-  padding-top: 100px;
-  text-shadow: 5px 5px 5px;
-}
-.testimonios__tarjeta1 {
-  width: 30vh;
-  margin: 20px;
-  background-color: #01b8aa;
-  border-radius: 5px;
-  display: grid;
-  grid-template-rows: repeat(3, 50px);
-  row-gap: 25px;
-  justify-content: center;
-  align-items: center;
-  padding: 15px;
-  text-align: center;
-}
-.testimonios__tarjeta1 h4 {
-  font-size: 25px;
-}
-.testimonios__tarjeta1 p {
-  font-size: 15px;
-}
-.testimonios__tarjeta1 h5 {
-  font-size: 20px;
-}
-.testimonios__tarjeta1 a {
-  font-size: 30px;
-}
-.testimonios__tarjeta2 {
-  width: 30vh;
-  margin: 20px;
-  background-color: #01b8aa;
-  border-radius: 5px;
-  display: grid;
-  grid-template-rows: repeat(3, 50px);
-  row-gap: 25px;
-  justify-content: center;
-  align-items: center;
-  padding: 15px;
-  text-align: center;
-}
-.testimonios__tarjeta2 h4 {
-  font-size: 25px;
-}
-.testimonios__tarjeta2 p {
-  margin-top: 25px;
-  font-size: 15px;
-}
-.testimonios__tarjeta2 h5 {
-  font-size: 20px;
-}
-.testimonios__tarjeta2 a {
-  font-size: 30px;
-}
-.testimonios__tarjeta3 {
-  width: 30vh;
-  margin: 20px;
-  background-color: #01b8aa;
-  border-radius: 5px;
-  display: grid;
-  grid-template-rows: repeat(3, 50px);
-  row-gap: 25px;
-  justify-content: center;
-  align-items: center;
-  padding: 15px;
-  text-align: center;
-}
-.testimonios__tarjeta3 h4 {
-  font-size: 25px;
-}
-.testimonios__tarjeta3 p {
-  margin-top: 25px;
-  font-size: 15px;
-}
-.testimonios__tarjeta3 h5 {
-  font-size: 20px;
-}
-.testimonios__tarjeta3 a {
-  font-size: 30px;
-}
-.testimonios__tarjeta4 {
-  width: 30vh;
-  margin: 20px;
-  background-color: #01b8aa;
-  border-radius: 5px;
-  display: grid;
-  grid-template-rows: repeat(3, 50px);
-  row-gap: 25px;
-  justify-content: center;
-  align-items: center;
-  padding: 15px;
-  text-align: center;
-}
-.testimonios__tarjeta4 h4 {
-  font-size: 25px;
-}
-.testimonios__tarjeta4 p {
-  margin-top: 25px;
-  font-size: 15px;
-}
-.testimonios__tarjeta4 h5 {
-  font-size: 20px;
-}
-.testimonios__tarjeta4 a {
-  font-size: 30px;
-}
-
 @media (min-width: 768px) {
-  .testimonios h2 {
-    font-size: 40px;
-  }
-}
-@media (min-width: 992px) {
-  .testimonios {
-    padding: 150px;
-    display: grid;
-    grid-template-columns: repeat(3, 36%);
-    grid-template-rows: repeat(3, 36%);
-    column-gap: 20px;
-    justify-content: center;
-  }
-  .testimonios h2 {
-    font-size: 45px;
-    grid-column: 1/2;
-  }
-  .testimonios__tarjeta1 {
-    grid-column: 1/2;
-    grid-row: 2/3;
-  }
-  .testimonios__tarjeta2 {
-    grid-column: 2/3;
-    grid-row: 1/2;
-  }
-  .testimonios__tarjeta3 {
-    grid-column: 2/3;
-    grid-row: 3/4;
-  }
-  .testimonios__tarjeta4 {
-    grid-column: 2/3;
-    grid-row: 3/4;
-  }
-}
-@media (min-width: 1200px) {
-  .testimonios {
-    padding: 150px;
-    display: grid;
-    grid-template-columns: repeat(3, 36%);
-    grid-template-rows: repeat(3, 36%);
-    column-gap: 20px;
-  }
-  .testimonios h2 {
-    font-size: 45px;
-    grid-column: 1/2;
-  }
-  .testimonios__tarjeta1 {
-    grid-column: 1/2;
-    grid-row: 2/3;
-  }
-  .testimonios__tarjeta2 {
-    grid-column: 2/3;
-    grid-row: 1/2;
-  }
-  .testimonios__tarjeta3 {
-    grid-column: 2/3;
-    grid-row: 3/4;
+  .tarjeta__estetica {
+    width: 300px;
   }
 }
 /*---CONTACTO---*/
