@@ -27,7 +27,7 @@
 
                 <div class="barra_collapse collapse navbar-collapse" id="navbarNavDropdown">
 
-                    <ul class="navbar-nav">
+                    <ul class="navbar-nav gap-3">
                         <li class="nav-item">
                             <a class="nav-link active" href="../index.html">Inicio</a>
                         </li>
@@ -35,7 +35,7 @@
                             <a class="nav-link" href="fisioterapia.html">Fisioterapia</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="promociones.html">Promociones</a>
+                            <a class="nav-link" href="kinesiologia.html">Kinesiología</a>
                         </li> 
                         <li class="nav-item">
                             <a class="nav-link" href="estetica.html">Kinesiología Estética</a>
@@ -58,34 +58,39 @@
 
         <!-- Formulario de Contacto -->
 
-        <section class="contacto__datos container m-4" id="contacto">
+        <section class="contacto__datos container p-5" id="contacto">
 
-            <div class="contacto__titulo row">
-                <h2 class="display-6 p-2 fw-bold text-center">Contactanos</h2>
+            <div class="row">
+                <div class="d-flex flex-column justify-content-center">
+                    <div class="contacto__titulo">
+                        <h2 class="display-6 p-2 fw-bold text-center">Contactanos</h2>
+                    </div>
+                    
+                    <form class="contacto__formulario" role="search" action="">
+                        <div class="contacto__nombre mb-6">
+                            <label for="exampleFormControlInput1" class="form-label"></label>
+                            <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="Nombre y Apellido">
+                        </div>
+                        <div class="contacto__telefono mb-6">
+                            <label for="exampleFormControlInput1" class="form-label"></label>
+                            <input type="tel" class="form-control" id="exampleFormControlInput1" placeholder="Telefono">
+                        </div>
+                        <div class="contacto__email mb-6">
+                            <label for="exampleFormControlInput1" class="form-label"></label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email">
+                        </div>
+                        <div class="contacto__turnos mb-6">
+                            <label for="exampleFormControlTextarea1" class="form-label"></label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="Para turnos/consulta/Reclamo/Sugerencia"></textarea>
+                        </div>
+                        <div class="d-flex justify-content-center m-3">
+                            <input class="contacto__btn btn shadow" type="submit" value="Enviar">
+                        </div>
+                    </form>
+                </div>
+                
             </div>
-            
-            <form role="search" class="contacto__formulario" action="">
-                <div class="contacto__nombre mb-6">
-                    <label for="exampleFormControlInput1" class="form-label"></label>
-                    <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="Nombre y Apellido">
-                </div>
-                <div class="contacto__telefono mb-6">
-                    <label for="exampleFormControlInput1" class="form-label"></label>
-                    <input type="tel" class="form-control" id="exampleFormControlInput1" placeholder="Telefono">
-                </div>
-                <div class="contacto__email mb-6">
-                    <label for="exampleFormControlInput1" class="form-label"></label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email">
-                </div>
-                <div class="contacto__turnos mb-6">
-                    <label for="exampleFormControlTextarea1" class="form-label"></label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="Para turnos/consulta/Reclamo/Sugerencia"></textarea>
-                </div>
-                <div class="d-flex justify-content-center m-3">
-                    <input class="contacto__btn btn shadow" type="submit" value="Enviar">
-                </div>
-            </form>
-
+        
         </section>
 
         <!-- Ubicación -->
@@ -130,7 +135,7 @@
                     <ul class="text-center d-flex flex-column gap-2 flex-lg-row gap-lg-5">
                         <li><a href="../index.html">Inicio</a></li>
                         <li><a href="fisioterapia.html">Fisioterapia</a></li>
-                        <li><a href="promociones.html">Promociones</a></li>
+                        <li><a href="kinesiologia.html">Kinesiología</a></li>
                         <li><a href="estetica.html">Kinesiología Estética</a></li>
                         <li><a href="contacto.html">Contacto</a></li>
                     </ul> 

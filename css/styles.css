@@ -217,71 +217,8 @@ footer .barrafooter__nav ul li :hover::after {
     width: 300px;
   }
 }
-/*---TRATAMIENTOS---*/ /*---PROMOCIONES---*/
-.promociones {
-  padding-top: 80px;
-  padding-bottom: 80px;
-  background-color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.promociones__titulo h2 {
-  font-size: 35px;
-  text-align: start;
-  text-shadow: 5px 5px 5px;
-  padding-top: 50px;
-}
-.promociones__descrip {
-  margin: 15px;
-}
-
-.promociones__descrip-tarjeta {
-  text-align: center;
-  background-color: #01b8aa;
-  border-radius: 5px;
-  padding: 50px;
-  margin: 20px;
-  box-shadow: -10px 10px 15px;
-  transition-duration: 0.5s;
-}
-.promociones__descrip-tarjeta:hover {
-  transform: scale(1.05);
-}
-.promociones__descrip-tarjeta h3 {
-  font-size: 25px;
-}
-.promociones__descrip-tarjeta p {
-  font-size: 18px;
-}
-
-@media (min-width: 576px) {
-  .promociones__descrip-tarjeta {
-    text-align: center;
-    margin: 20px;
-  }
-}
-@media (min-width: 1200px) {
-  .promociones {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: 1fr;
-  }
-  .promociones__titulo {
-    margin: 50px;
-  }
-  .promociones__titulo h2 {
-    font-size: 45px;
-  }
-  .promociones__descrip {
-    margin-top: 150px;
-  }
-  .promociones__descrip-tarjeta {
-    width: 70vh;
-    text-align: left;
-  }
-}
+/*---TRATAMIENTOS---*/
+/*---KINESIOLOGIA---*/
 /*---Estetica---*/
 @media (min-width: 576px) {
   .tarjeta__btn {
@@ -294,8 +231,12 @@ footer .barrafooter__nav ul li :hover::after {
   }
 }
 /*---CONTACTO---*/
-.contacto__datos {
-  width: 80%;
+.contacto__iframe iframe {
+  border-radius: 15px;
+  transition-duration: 0.5s;
+}
+.contacto__iframe iframe:hover {
+  transform: scale(1.1);
 }
 
 /*# sourceMappingURL=styles.css.map */
