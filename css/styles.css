@@ -215,6 +215,7 @@ footer .barrafooter__nav ul li :hover::after {
 @media (min-width: 768px) {
   .tarjeta__portada {
     width: 300px;
+    height: 530px;
   }
 }
 /*---TRATAMIENTOS---*/
