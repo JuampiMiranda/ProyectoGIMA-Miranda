@@ -1,18 +1,30 @@
 
 /*---INDEX---*/
+.portada__contenido{
 
-.tarjeta__portada{
+   background-color: rgb(240, 240, 240);
+   
+      div{
+         ul{
+            li{
+               list-style-type: square;
+            }
+         }
+      }
+}
 
-    background-color: $color-secundario;
+.tarjeta__portada--fisio{
+
+    background-color: rgb(240, 240, 240);
     transition-duration: 0.5s;
     
     ul{
 
       li{
+         
          list-style: circle;
          padding: 5px;
          text-align: start;
-
       }
     }
 
@@ -22,227 +34,118 @@
      }
 }
 
-.portada__contenido{
+.tarjeta__portada--kine{
 
    background-color: rgb(240, 240, 240);
+   transition-duration: 0.5s;
+   
+   ul{
+
+     li{
+
+        list-style: circle;
+        padding: 5px;
+        text-align: start;
+     }
+   }
+
+    &:hover{
+
+       transform: scale(1.1);
+    }
 }
+
+.tarjeta__portada--estetica{
+
+   background-color: rgb(240, 240, 240);
+   transition-duration: 0.5s;
+   
+   ul{
+
+     li{
+
+        list-style: circle;
+        padding: 5px;
+        text-align: start;
+     }
+   }
+
+    &:hover{
+
+       transform: scale(1.1);
+    }
+}
+
+.tarjeta__portada--dom{
+
+   background-color: rgb(240, 240, 240);
+   transition-duration: 0.5s;
+   
+   ul{
+
+     li{
+
+        list-style: circle;
+        padding: 5px;
+        text-align: start;
+     }
+   }
+
+    &:hover{
+
+       transform: scale(1.1);
+    }
+}
+
 
 @media (min-width: 768px){
 
-   .tarjeta__portada{
+   .tarjeta__portada--kine{
 
-      width: 300px;
-      height: 530px;
+      height: 22rem;
+   }
+
+   .tarjeta__portada--dom{
+
+      height: 15rem;
    }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// .portada{
-//     height: 100vh;
-//     text-align: justify;
-//     padding-top: 100px;
-//     background-color: $color-fondo;
-//     background-size: cover;
-//     background-position: center;
-//     background-attachment: fixed;
-
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: center;
-//     align-items: center;
-
-//     &__contenido 
-    
-//         h2{
-//         font-weight: 700;
-//         font-size: 35px;
-//         text-align: center;
-//         }
-
-//         h3{
-        
-//         padding: 15px;
-//         font-weight: 700;
-//         font-size: 30px;
-//         text-align: center; 
-//         text-decoration: underline 2px;
-//         }
-    
-//     &__contenido p{
-        
-//         font-style: italic;
-//         font-weight: 400;
-//         font-size: 20px;
-//         padding: 20px;
-//     }
-// }
-
-// .portada__presentacion h4{
-
-//     font-weight: 700;
-//     font-size: 25px;
-//     text-align: center;
-//     text-decoration: underline 2px;
-//     padding: 20px;
-// }
-
-// .portada__video{
-
-//     margin-top: 10px;
-//     margin-bottom: 100px;
-//     width: 350px;
-//     height: 200px;
-//     border-radius: 15px;
-
-//     box-shadow: 10px 10px 10px;
-//     transition-duration: 0.5s;
-
-//     &:hover{
-
-//         transform: scale(1.1);
-//     }
-// }
-
-// @media (min-width: 576px){
-
-//     .portada{
-
-//         padding-top: 150px;
-
-//         &__contenido h2{
-
-//             font-size: 40px;
-//         }
-        
-//         &__contenido p{
-        
-//             font-size: 25px;
-//             padding: 20px;
-//         }
-//     }
-
-//     .portada__video{
-
-//         width: 550px;
-//         height: 300px;
-//     }
-
-// }
-
-// @media (min-width: 768px){
-
-//     .portada{
-
-//         padding-top: 150px;
-
-//         &__contenido h2{
-
-//             font-size: 40px;
-//         }
-        
-//         &__contenido p{
-        
-//             font-size: 25px;
-//             padding: 20px;
-//         }
-//         &__presentacion h3{
-
-//             font-size: 30px;
-//             padding: 20px; 
-//         }
-//     }
-
-//     .portada__video{
-
-//         width: 550px;
-//         height: 300px;
-//     }
-// }
-
 // @media (min-width: 992px){
+//       .articulo{
 
-//     .portada{
+//          &__deporte{
 
-//         padding-top: 150px;
+//             width: 20rem;
+//          }
 
-//         &__contenido h2{
+//          &__laser{
 
-//             font-size: 40px;
-//         }
-        
-//         &__contenido p{
-        
-//             font-size: 25px;
-//             padding: 20px;
-//         }    
-//     }
+//             width: 20rem;
 
-//     .portada__video{
+//          }
+//          &__neuro{
 
-//         width: 650px;
-//         height: 400px;
-//     }
+//             width: 20rem;
+
+//          }
+//          &__linfatico{
+
+//             width: 20rem;
+            
+//          }
+//       }
 // }
 
-// @media (min-width: 1200px){
+@media (min-width: 1400px){
 
-//     .portada{
+   .tarjeta__portada--kine{
 
-//         padding-top: 250px;
+      height: 20rem;
+   }
 
-//         &__contenido h2{
+   .tarjeta__portada--dom{
 
-//             font-size: 45px;
-//         }
-        
-//         &__contenido p{
-        
-//             font-size: 30px;
-//             padding: 20px;
-//         }
-
-//         &__presentacion h3{
-
-//             font-size: 35px;
-//             padding: 20px;    
-//         }
-//     }
-
-//     .portada__video{
-
-//         width: 750px;
-//         height: 500px;
-//     }
-
-// }
-
-// @media (min-width: 1400px){
-
-//     .portada{
-
-//         padding-top: 150px;
-//     }
-
-//     .portada__video{
-
-//         width: 750px;
-//         height: 500px;
-//     }
-// }
+      height: 13rem;
+   }
+}

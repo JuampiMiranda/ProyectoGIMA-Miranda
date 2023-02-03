@@ -28,6 +28,21 @@
     }
 }
 
+.articulo__btn{
+
+    background-color: $color-btn;
+    font-size: 15px;
+    border-radius: 5px;
+    width: 100px;
+
+    :hover{
+        
+        color: $color-primario;
+        background-color: white;
+
+    }
+}
+
 
 
 

@@ -56,6 +56,8 @@
         
     <main class="portada">
 
+        <!-- /////CAROUSEL///// -->
+        
         <section class="portada__carousel container">
 
             <div id="carouselExampleCaptions" class="carousel slide p-1">
@@ -99,46 +101,62 @@
             
         </section>
 
-        <section class="portada__total container p-2">
+        <!-- /////PRESENTACIÓN///// -->
 
-            <div class="row">
-                <article class="portada__contenido shadow">
-                    
-                    <div>
-                        <h2 class="portada__titulo text-center display-6 fw-bold p-2">Centro Kinesiológico y Estética Integral</h2>
+        <section class="portada container p-1">
+
+                <div>
+                    <h2 class="portada__titulo text-center display-6 fw-bold p-5">Centro Kinesiológico y Estética Integral</h2>
+                </div>
+                
+                <article class="portada__contenido row row-cols-lg-2 shadow p-2 p-md-5">
+
+                    <div class="col-lg">
+                        <h3 class="portada__subtitulo text-center text fs-3 p-2 text-decoration-underline">¿Quienes Somos?<h3>
+                        <ul class="m-3">
+                            <li class="fs-5">Gima es un espacio pensado para combinar las mejores virtudes de la Kinesiología general del movimiento y la Kinesiología estética integral. Con el respaldo de más de 6 años de funcionamiento, dándonos una experiencia abalada por nuestros pacientes, y con un equipo profesional del más alto nivel.</li>
+                        </ul>
                     </div>
-                    <div>
-                        <h3 class="portada__subtitulo text-center fs-3 p-2 text-decoration-underline">¿Quienes Somos?<h3>
-                            <p class="text-center fs-5 p-2">Gima es un espacio pensado para combinar las mejores virtudes de la Kinesiología general del movimiento y la Kinesiología estética integral. Con el respaldo de más de 6 años de funcionamiento, dándonos una experiencia abalada por nuestros pacientes, y con un equipo profesional del más alto nivel.</p>
-                    </div>
-                    <div>
+
+                    <div class="col-lg">
                         <h3 class="text-center fs-3 text-decoration-underline">Objetivo General</h3>
-                        <p class="text-center fs-5 p-2">Reestablecer las funciones corporales-motoras dañadas por enfermedades, traumatismos, etc.</p>
+                        <ul class="m-3">
+                            <li class="fs-5">Reestablecer las funciones corporales-motoras dañadas por enfermedades, traumatismos, etc.</li>
+                        </ul>
                     </div>
-                    <div>
+
+                    <div class="col-lg">
                         <h3 class="text-center fs-3 text-decoration-underline">Objetivo Particular</h3>
-                    <p class="text-center fs-5 p-2">Rehabilitación del paciente que presenta una limitación funcional, permitiéndole una mayor independencia en sus actividades de la vida diaria.</p>
-                    <p class="text-center fs-5">Aliviar el dolor mediante técnicas de terapia física.</p>
-                    <p class="text-center fs-5">Prevenir mayor deterioro físico funcional en pacientes con limitaciones, preservando su independencia. Pre escribir órtesis, prótesis y ayudas técnicas y educación en pacientes sanos.</p>
+                        <ul class="m-3">
+                            <li class="fs-5 p-1">Rehabilitación del paciente que presenta una limitación funcional, permitiéndole una mayor independencia en sus actividades de la vida diaria.</li>
+                            <li class="fs-5 p-1">Aliviar el dolor mediante técnicas de terapia física.</li>
+                            <li class="fs-5 p-1">Prevenir mayor deterioro físico-funcional en pacientes con limitaciones, preservando su independencia. Prescribir órtesis, prótesis y ayudas técnicas y educación en pacientes sanos.</li>
+                        </ul>
                     </div>
-                    
-                    
-                    
 
-    
+                    <div class="col-lg">
+                        <h3 class="text-center fs-3 text-decoration-underline">Nuestros Profesionales</h3>
+                        <ul class="m-3">
+                            <li class="fs-5 p-1">Fisioterapeutas.</li>
+                            <li class="fs-5 p-1">Kinesiólogos especializados.</li>
+                            <li class="fs-5 p-1">Esteticistas auxilares.</li>
+                        </ul>
+                    </div>
+
                 </article> 
-            </div>
-
+        
         </section>
+
+        <!-- /////TRATAMIENTOS///// -->
 
         <section class="container">
 
-            <article class="row justify-content-center gap-3 p-5">
+            <article class="tarjeta row justify-content-center gap-3 p-5">
 
-                <div class="tarjeta__portada col-xxl card text-center gap-2 shadow" >
-                    <i class="bi bi-heart-pulse display-4 p-2"></i>
-                    <h4 class="fs-4 text-decoration-underline"><a href="./pages/fisioterapia.html">Fisioterapia</a></h4>
-                    <p class="fs-5">Ciencia que se encarga de utilizar todos los agentes físicos (calor, movimiento,etc) disponibles en el medio para restaurar la función del cuerpo humano.</p>
+                <div class="tarjeta__portada--fisio col-xxl card text-center gap-2 shadow" style="width: 15rem;" >
+                    <i class="bi bi-heart-pulse display-5 p-2"></i>
+                    <h4 class="fs-5 text-decoration-underline"><a href="./pages/fisioterapia.html">Fisioterapia</a></h4>
+                    <p class="fs-6">Ciencia que se encarga de utilizar todos los agentes físicos (calor, movimiento,etc) disponibles en el medio para restaurar la función del cuerpo humano.</p>
                     <h5>Nuestras especialidades:</h5>
                     <ul>
                         <li>Terapia Manual</li>
@@ -146,24 +164,82 @@
                         <li>Punción seca</li>
                     </ul>
                 </div>
-                <div class="tarjeta__portada col-xxl card text-center gap-2 shadow">
-                    <i class="bi bi-heart-pulse display-4 p-2"></i>
-                    <h4 class="fs-4 text-decoration-underline"><a href="./pages/kinesiologia.html">Kinesiologia</a></h4>
-                    <p class="fs-5">Ciencia que estudia la funcionalidad y calidad del movimiento humano. Contribuye a la prevención, rehabilitación y seguimiento de pacientes con problemas que alteran la función motriz en las acciones de su vida diaria, según su actividad.</p>
+                <div class="tarjeta__portada--kine col-xxl card text-center gap-2 shadow" style="width: 15rem;">
+                    <i class="bi bi-heart-pulse display-5 p-2"></i>
+                    <h4 class="fs-5 text-decoration-underline"><a href="./pages/kinesiologia.html">Kinesiologia</a></h4>
+                    <p class="fs-6">Ciencia que estudia la funcionalidad y calidad del movimiento humano. Contribuye a la prevención, rehabilitación y seguimiento de pacientes con problemas que alteran la función motriz en las acciones de su vida diaria, según su actividad.</p>
                 </div>
-                <div class="tarjeta__portada col-xxl card text-center gap-2 shadow">
-                    <i class="bi bi-heart-pulse display-4 p-2"></i>
-                    <h4 class="fs-4 text-decoration-underline"><a href="./pages/estetica.html">Kinesiologia Estetica</a></h4>
-                    <p class="fs-5">Área de la kinesiología que se dedica a tratar y prevenir las lesiones en la piel. Esta disciplina abarca varios procedimientos que se pueden realizar en el cuerpo o en la cara como la limpieza facial, los tratamientos vasculares o despigmentantes, la microdermoabrasión, el rejuvenecimiento facial, entre otros servicios.</p>
+                <div class="tarjeta__portada--estetica col-xxl card text-center gap-2 shadow" style="width: 15rem;">
+                    <i class="bi bi-heart-pulse display-5 p-2"></i>
+                    <h4 class="fs-5 text-decoration-underline"><a href="./pages/estetica.html">Kinesiologia Estetica</a></h4>
+                    <p class="fs-6">Área de la kinesiología que se dedica a tratar y prevenir las lesiones en la piel. Esta disciplina abarca varios procedimientos que se pueden realizar en el cuerpo o en la cara como la limpieza facial, los tratamientos vasculares o despigmentantes, la microdermoabrasión, el rejuvenecimiento facial, entre otros servicios.</p>
                 </div>
-                <div class="tarjeta__portada col-xxl card text-center gap-2 shadow">
-                    <i class="bi bi-heart-pulse display-4 p-2"></i>
-                    <h4 class="fs-4 text-decoration-underline">Servicio Integral a Domicilio</h4>
-                    <p class="fs-5">Todos nuestros tratamientos lo llevamos a la comodidad de tu hogar.</p>
+                <div class="tarjeta__portada--dom col-xxl card text-center gap-2 shadow" style="width: 15rem;">
+                    <i class="bi bi-heart-pulse display-5 p-2"></i>
+                    <h4 class="fs-5 text-decoration-underline">Servicio Integral a Domicilio</h4>
+                    <p class="fs-6">Todos nuestros tratamientos lo llevamos a la comodidad de tu hogar.</p>
                 </div>
                 
             </article>
 
+        </section>
+
+        <!-- /////ARTICULOS///// -->
+
+        <section>
+
+            <article class="container">
+
+                <div class="articulo row d-flex justify-content-center">
+
+                  <div class="articulo__deporte col-xxl card m-5 shadow-sm" style="width: 18rem;">
+                    <img src="./img/img-art-deporte.jpg" class="card-img-top" alt="...">
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Kinesiologia Deportiva</h5>
+                      <p class="card-text">En GIMA queremos acompañarte en tu proceso de rehabilitación física.</p>
+                      <div class="d-flex justify-content-center">
+                        <a href="./pages/deporte.html" class="articulo__btn btn">Explorar</a>
+                      </div>
+                    </div>
+                  </div>
+  
+                  <div class="articulo__laser col-xxl card m-5 shadow-sm" style="width: 18rem;">
+                    <img src="./img/img-art-lipolaser.jpg" class="card-img-top" alt="...">
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Lipoláser</h5>
+                      <p class="card-text">Sin dolor y sin cirugía, y sin riesgos para la salud. Descubre este inovador tratamiento.</p>
+                      <div class="d-flex justify-content-center">
+                        <a href="./pages/lipolaser.html" class="articulo__btn btn">Explorar</a>
+                      </div>
+                    </div>
+                  </div>
+  
+                  <div class="articulo__neuro col-xxl card m-5 shadow-sm" style="width: 18rem;">
+                    <img src="./img/img-art-neuro.jpg" class="card-img-top"  alt="...">
+                    <div class="card-body  text-center">
+                      <h5 class="card-title">Neurodinamia</h5>
+                      <p class="card-text">Una técnica de fisioterapia que te interesa conocer. Adentrate en este tratamiento.</p>
+                      <div class="d-flex justify-content-center">
+                        <a href="./pages/neurodinamia.html" class="articulo__btn btn">Explorar</a>
+                      </div>
+                    </div>
+                  </div>
+  
+                  <div class="articulo__linfatico col-xxl card m-5 shadow-sm" style="width: 18rem;">
+                    <img src="./img/img-art-linfatico.jpg" class="card-img-top" alt="...">
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Drenaje Linfático</h5>
+                      <p class="card-text">Nuestra técnica de masaje manual que trabaja en el sistema linfático para estimularlo.</p>
+                      <div class="d-flex justify-content-center">
+                        <a href="./pages/drenajelinfatico.html" class="articulo__btn btn">Explorar</a>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+
+            </article>
+            
         </section>
 
     </main>
