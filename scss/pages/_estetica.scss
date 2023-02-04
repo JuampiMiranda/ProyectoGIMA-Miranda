@@ -1,6 +1,25 @@
 
 /*---Estetica---*/
 
+.tarjeta__estetica{
+
+    transition: 0.1s;
+
+    &:hover{
+
+        transform: scale(1.1);
+     }
+     div{
+        ul{
+            li{
+
+                list-style-type: square;
+                text-align: start;
+            }
+        }
+     }
+}
+
 @media (min-width: 576px){
 
     .tarjeta__btn{
