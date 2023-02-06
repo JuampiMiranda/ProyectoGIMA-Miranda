@@ -37,7 +37,7 @@ a {
   transition: 0.2s;
 }
 .contacto__btn :hover {
-  color: #09e4d2;
+  color: #23d4c6;
   background-color: white;
 }
 
@@ -48,13 +48,18 @@ a {
   width: 100px;
 }
 .articulo__btn :hover {
-  color: #09e4d2;
+  color: #23d4c6;
   background-color: white;
 }
 
 /*---NAVBAR---*/
 header {
-  background-color: #09e4d2;
+  background-color: #23d4c6;
+  font-style: normal;
+}
+
+.logo img {
+  width: 10rem;
 }
 
 .barra {
@@ -180,7 +185,7 @@ header {
 }
 /*---FOOTER---*/
 footer {
-  background-color: #09e4d2;
+  background-color: #23d4c6;
 }
 footer .barrafooter__nav ul li {
   font-size: 20px;
@@ -207,7 +212,7 @@ footer .barrafooter__nav ul li :hover::after {
 /*pages*/
 /*---INDEX---*/
 .portada__contenido {
-  background-color: rgb(240, 240, 240);
+  background-color: #b9fff1;
 }
 .portada__contenido div ul li {
   list-style-type: square;
