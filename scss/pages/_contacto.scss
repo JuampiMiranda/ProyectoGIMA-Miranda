@@ -6,11 +6,16 @@
 
     iframe{
 
-        border-radius: 15px;
+        border-radius: 0.938rem;
         transition-duration: 0.5s;
 
         &:hover{
         transform: scale(1.1);
         }
     }
+}
+
+.contacto__wpp{
+
+    background-color: $color-secundario;
 }

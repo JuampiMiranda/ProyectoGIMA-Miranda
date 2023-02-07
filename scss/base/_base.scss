@@ -1,12 +1,6 @@
 
 /*---RESET---*/
 
-// html{
-
-//     font-size: 16px;
-
-// }
-
 *{
     
     margin: 0;
@@ -26,6 +20,19 @@ a{
 
     text-decoration: none;
     color: black;
+}
+
+.logo{
+
+    width: 8rem;
+}
+
+@media (min-width: 62rem){
+
+    .logo{
+
+        width: 10rem;
+    }
 }
     
 

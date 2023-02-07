@@ -18,68 +18,82 @@ a {
   color: black;
 }
 
+.logo {
+  width: 8rem;
+}
+
+@media (min-width: 62rem) {
+  .logo {
+    width: 10rem;
+  }
+}
 /*components*/
 /*---BUTTON---*/
 .tarjeta__btn {
   background-color: #d7fff1;
   color: black;
-  font-style: italic;
-  font-size: 20px;
-  width: 200px;
+  font-size: 1.25rem;
+  font-weight: 900;
+  width: 12.5rem;
   border-radius: 0%;
 }
 
 .contacto__btn {
   background-color: #d7fff1;
-  font-size: 15px;
-  border-radius: 5px;
-  width: 100px;
+  font-size: 0.938rem;
+  border-radius: 0.313rem;
+  width: 6.25rem;
   transition: 0.2s;
 }
 .contacto__btn :hover {
   color: #23d4c6;
-  background-color: white;
 }
 
 .articulo__btn {
   background-color: #d7fff1;
-  font-size: 15px;
-  border-radius: 5px;
-  width: 100px;
+  font-size: 0.938rem;
+  border-radius: 0.313rem;
+  width: 6.25rem;
+  transition: 0.2s;
 }
 .articulo__btn :hover {
-  color: #23d4c6;
+  color: #d7fff1;
+}
+
+.whatsapp__btn {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  line-height: 63px;
+  bottom: 25px;
+  right: 25px;
+  background: #25d366;
+  color: #FFF;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 35px;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+  z-index: 100;
+  transition: all 300ms ease;
+}
+.whatsapp__btn:hover {
+  text-decoration: none;
+  color: #20ba5a;
   background-color: white;
 }
 
 /*---NAVBAR---*/
 header {
   background-color: #23d4c6;
-  font-style: normal;
-}
-
-.logo img {
-  width: 10rem;
 }
 
 .barra {
-  padding: 10px;
+  padding: 0.625rem;
   width: 100%;
   transition: all 0.5s;
 }
-.barra_titulo {
-  margin-left: 20px;
-}
-.barra_titulo a {
-  font-size: 35px;
-  font-weight: 900;
-  font-style: italic;
-  color: black;
-  text-shadow: 10px 10px 8px black;
-  transition: all 0.5s;
-}
 .barra_hamb {
-  margin-right: 20px;
+  margin-right: 1.25rem;
   border: none;
 }
 .barra_collapse ul {
@@ -89,7 +103,8 @@ header {
   align-items: center;
 }
 .barra_collapse ul li {
-  font-size: 20px;
+  font-size: 1.5rem;
+  font-weight: 900;
   display: inline-block;
   position: relative;
 }
@@ -98,7 +113,7 @@ header {
   position: absolute;
   width: 100%;
   transform: scaleX(0);
-  height: 4px;
+  height: 0.25rem;
   bottom: 0;
   left: 0;
   background-color: #d7fff1;
@@ -115,80 +130,61 @@ header {
   text-decoration: underline;
 }
 
-@media (min-width: 768px) {
-  .barra_titulo {
-    padding-left: 20px;
-  }
-  .barra_titulo a {
-    font-size: 30px;
-  }
+@media (min-width: 48rem) {
   .barra_hamb {
-    margin-right: 20px;
+    margin-right: 1.25rem;
   }
 }
-@media (min-width: 992px) {
-  .barra_titulo {
-    padding-left: 20px;
-  }
-  .barra_titulo a {
-    font-size: 35px;
-  }
+@media (min-width: 62rem) {
   .barra_collapse {
-    padding: 5px;
+    padding: 0.313rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .barra_collapse ul li {
+    gap: 2.5rem;
+    margin-right: 1.25rem;
+  }
+}
+@media (min-width: 75rem) {
+  .barra_collapse {
+    padding: 0.313;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
   }
   .barra_collapse ul {
-    gap: 30px;
-    margin-right: 20px;
+    gap: 2.5rem;
+    margin-right: 1.25rem;
   }
 }
-@media (min-width: 1200px) {
-  .barra_titulo {
-    padding-left: 20px;
-  }
-  .barra_titulo a {
-    font-size: 35px;
-  }
+@media (min-width: 87.5rem) {
   .barra_collapse {
-    padding: 5px;
+    padding: 0.313rem;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
   }
   .barra_collapse ul {
-    gap: 40px;
-    margin-right: 20px;
-  }
-}
-@media (min-width: 1400px) {
-  .barra_titulo {
-    padding-left: 20px;
-  }
-  .barra_titulo a {
-    font-size: 35px;
-  }
-  .barra_collapse {
-    padding: 5px;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-  }
-  .barra_collapse ul {
-    gap: 50px;
-    margin-right: 20px;
+    gap: 3.125rem;
+    margin-right: 1.25rem;
   }
 }
 /*---FOOTER---*/
 footer {
   background-color: #23d4c6;
 }
+footer .barrafooter__nav a {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 900;
+}
 footer .barrafooter__nav ul li {
-  font-size: 20px;
+  font-size: 1.25rem;
   display: inline-block;
   position: relative;
 }
@@ -197,7 +193,7 @@ footer .barrafooter__nav ul li ::after {
   position: absolute;
   width: 100%;
   transform: scaleX(0);
-  height: 4px;
+  height: 0.25rem;
   bottom: 0;
   left: 0;
   background-color: #d7fff1;
@@ -215,7 +211,9 @@ footer .barrafooter__nav ul li :hover::after {
   background-color: #b9fff1;
 }
 .portada__contenido div ul li {
-  list-style-type: square;
+  list-style: square;
+  padding: 0.313rem;
+  text-align: start;
 }
 
 .tarjeta__portada--fisio {
@@ -223,8 +221,8 @@ footer .barrafooter__nav ul li :hover::after {
   transition-duration: 0.5s;
 }
 .tarjeta__portada--fisio ul li {
-  list-style: circle;
-  padding: 5px;
+  list-style: square;
+  padding: 0.313rem;
   text-align: start;
 }
 .tarjeta__portada--fisio:hover {
@@ -236,8 +234,8 @@ footer .barrafooter__nav ul li :hover::after {
   transition-duration: 0.5s;
 }
 .tarjeta__portada--kine ul li {
-  list-style: circle;
-  padding: 5px;
+  list-style: square;
+  padding: 0.313rem;
   text-align: start;
 }
 .tarjeta__portada--kine:hover {
@@ -249,41 +247,28 @@ footer .barrafooter__nav ul li :hover::after {
   transition-duration: 0.5s;
 }
 .tarjeta__portada--estetica ul li {
-  list-style: circle;
-  padding: 5px;
+  list-style: square;
+  padding: 0.313rem;
   text-align: start;
 }
 .tarjeta__portada--estetica:hover {
   transform: scale(1.1);
 }
 
-.tarjeta__portada--dom {
-  background-color: rgb(240, 240, 240);
-  transition-duration: 0.5s;
+@media (min-width: 75rem) {
+  .tarjeta__portada--kine {
+    height: 34rem;
+  }
+  .tarjeta__portada--estetica {
+    height: 40rem;
+  }
 }
-.tarjeta__portada--dom ul li {
-  list-style: circle;
-  padding: 5px;
-  text-align: start;
-}
-.tarjeta__portada--dom:hover {
-  transform: scale(1.1);
-}
-
-@media (min-width: 768px) {
+@media (min-width: 87.5rem) {
   .tarjeta__portada--kine {
     height: 22rem;
   }
-  .tarjeta__portada--dom {
-    height: 15rem;
-  }
-}
-@media (min-width: 1400px) {
-  .tarjeta__portada--kine {
-    height: 20rem;
-  }
-  .tarjeta__portada--dom {
-    height: 13rem;
+  .tarjeta__portada--estetica {
+    height: 28rem;
   }
 }
 /*---TRATAMIENTOS---*/
@@ -296,27 +281,32 @@ footer .barrafooter__nav ul li :hover::after {
   transform: scale(1.1);
 }
 .tarjeta__estetica div ul li {
-  list-style-type: square;
+  list-style: square;
+  padding: 0.313rem;
   text-align: start;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 36rem) {
   .tarjeta__btn {
-    width: 450px;
+    width: 28.125rem;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 48rem) {
   .tarjeta__estetica {
-    width: 300px;
+    width: 18.75rem;
   }
 }
 /*---CONTACTO---*/
 .contacto__iframe iframe {
-  border-radius: 15px;
+  border-radius: 0.938rem;
   transition-duration: 0.5s;
 }
 .contacto__iframe iframe:hover {
   transform: scale(1.1);
+}
+
+.contacto__wpp {
+  background-color: #b9fff1;
 }
 
 /*---ARTICULO-DEPORTE---*/

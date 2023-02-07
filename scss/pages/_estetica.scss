@@ -9,31 +9,33 @@
 
         transform: scale(1.1);
      }
+
      div{
+
         ul{
+
             li{
 
-                list-style-type: square;
-                text-align: start;
+                @include li();
             }
         }
      }
 }
 
-@media (min-width: 576px){
+@media (min-width: 36rem){
 
     .tarjeta__btn{
 
-        width: 450px;
+        width: 28.125rem;
 
     }
 }
 
-@media (min-width: 768px){
+@media (min-width: 48rem){
 
     .tarjeta__estetica{
 
-        width: 300px;
+        width: 18.75rem;
     }
 }
 

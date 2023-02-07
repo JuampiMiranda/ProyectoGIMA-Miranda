@@ -1,13 +1,17 @@
 
 /*---INDEX---*/
+
 .portada__contenido{
 
    background-color: $color-secundario;
    
       div{
+
          ul{
+
             li{
-               list-style-type: square;
+
+               @include li();
             }
          }
       }
@@ -22,9 +26,7 @@
 
       li{
          
-         list-style: circle;
-         padding: 5px;
-         text-align: start;
+         @include li();
       }
     }
 
@@ -43,9 +45,7 @@
 
      li{
 
-        list-style: circle;
-        padding: 5px;
-        text-align: start;
+        @include li();
      }
    }
 
@@ -64,9 +64,7 @@
 
      li{
 
-        list-style: circle;
-        padding: 5px;
-        text-align: start;
+        @include li();
      }
    }
 
@@ -76,50 +74,28 @@
     }
 }
 
-.tarjeta__portada--dom{
+@media (min-width: 75rem){
 
-   background-color: rgb(240, 240, 240);
-   transition-duration: 0.5s;
-   
-   ul{
+   .tarjeta__portada--kine{
 
-     li{
-
-        list-style: circle;
-        padding: 5px;
-        text-align: start;
-     }
+      height: 34rem;
    }
 
-    &:hover{
+   .tarjeta__portada--estetica{
 
-       transform: scale(1.1);
-    }
+      height: 40rem;
+   }
 }
 
-
-@media (min-width: 768px){
+@media (min-width: 87.5rem){
 
    .tarjeta__portada--kine{
 
       height: 22rem;
    }
 
-   .tarjeta__portada--dom{
+   .tarjeta__portada--estetica{
 
-      height: 15rem;
-   }
-}
-
-@media (min-width: 1400px){
-
-   .tarjeta__portada--kine{
-
-      height: 20rem;
-   }
-
-   .tarjeta__portada--dom{
-
-      height: 13rem;
+      height: 28rem;
    }
 }

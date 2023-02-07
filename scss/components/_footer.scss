@@ -7,9 +7,16 @@ footer{
 
     .barrafooter__nav{
 
+        a{
+
+            color: white;
+            font-size: 1.50rem;
+            font-weight: 900;
+        }
+
         ul{
             li{
-                font-size: 20px;
+                font-size: 1.25rem;
                 display: inline-block;
                 position: relative;
                 
@@ -19,7 +26,7 @@ footer{
                 position: absolute;
                 width: 100%;
                 transform: scaleX(0);
-                height: 4px;
+                height: 0.25rem;
                 bottom: 0;
                 left: 0;
                 background-color: $color-btn;
@@ -34,137 +41,5 @@ footer{
                }
             }
         }
-
     }
 }
-
-
-
-
-
-
-
-
-
-
-// .barrafooter{
-
-//     background-color: $color-primario;
-//     background-image: linear-gradient(to bottom, $color-secundario, $color-primario);
-//     text-align: center;
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: center;
-//     align-items: center;
-
-//     &_titulo {
-        
-//         font-size: 25px;
-//         font-weight: 700;
-//         font-style: italic;
-//         color: $color-btn;
-//         text-shadow: 10px 10px 8px black;
-//         padding-top: 10px;
-        
-    
-//     }
-    
-//     &_nav{
-        
-//         ul{
-
-//             padding: 15px;
-//             font-size: 20px;
-//             gap: 10px;
-//         }
-//     }
-
-//     &_copy{
-
-//         font-size: 17px;
-//         margin: 10px;
-//     }
-// }
-
-// @media (min-width: 768px){
-
-//     .barrafooter{
-
-//         &_titulo{
-
-//             font-size: 35px;
-//         }
-
-//         &_nav{
- 
-//          ul{
- 
-//              display: flex;
-//              flex-direction: column;
-//              gap: 10px;
-//          }
-//         }
-//      }
-// }
-
-// @media (min-width: 992px){
-
-//     .barrafooter{
-
-//         &_titulo{
-
-//             font-size: 35px;
-//         }
-
-//         &_nav{
-
-//          ul{
-
-//             display: flex;
-//             flex-direction: row;
-//             gap: 30px;
-//         }
-//        }
-//     }
-// }
-// @media (min-width: 1200px){
-
-//     .barrafooter{
-
-//         &_titulo{
-
-//             font-size: 35px;
-//         }
-
-//         &_nav{
-
-//          ul{
-
-//             display: flex;
-//             flex-direction: row;
-//             gap: 40px;
-//         }
-//        }
-//     }
-// }
-
-// @media (min-width: 1400px){
-
-//     .barrafooter{
-
-//         &_titulo{
-
-//             font-size: 35px;
-//         }
-
-//         &_nav{
-
-//          ul{
-
-//             display: flex;
-//             flex-direction: row;
-//             gap: 50px;
-//         }
-//        }
-//     }
-// }
