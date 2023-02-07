@@ -1,5 +1,6 @@
 
 /*---INDEX---*/
+/*---PORTADA---*/
 
 .portada__contenido{
 
@@ -17,11 +18,20 @@
       }
 }
 
+/*---TARJETAS---*/
+
 .tarjeta__portada--fisio{
 
     background-color: rgb(240, 240, 240);
     transition-duration: 0.5s;
     
+    h3{
+      a{
+         color: black;
+      }
+
+    }
+
     ul{
 
       li{
@@ -41,6 +51,13 @@
    background-color: rgb(240, 240, 240);
    transition-duration: 0.5s;
    
+   h3{
+      a{
+         color: black;
+      }
+
+    }
+
    ul{
 
      li{
@@ -60,6 +77,13 @@
    background-color: rgb(240, 240, 240);
    transition-duration: 0.5s;
    
+   h3{
+      a{
+         color: black;
+      }
+
+   }
+
    ul{
 
      li{
